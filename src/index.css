@@ -1,0 +1,43 @@
+:root {
+    --primary:#E5745D;}
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+@layer components {
+
+    .btn{
+        @apply bg-primary text-white py-[21px] px-[39px]  outline  border-2 border-white outline-[5px] outline-primary;
+    }
+    .icon{
+        @apply p-[13px] text-[26px] text-white bg-primary rounded-full;
+    }
+
+}
+
+@layer utilities {
+    
+}
+.slick-initialized .slick-slide {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+ul.react-tabs__tab-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.react-tabs__tab{
+    outline: none !important;
+    cursor: pointer;
+}
+.react-tabs__tab--selected {
+    border-bottom: 1px solid var(--primary) !important;
+}
